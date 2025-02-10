@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <img src="./img/logo.png" alt="LOGO">
+        <a href="business.html">Business</a>
+        <a href="tickets.html">Tickets</a>
+    </header>
+    <main style="flex-direction: row;">
+        <div class="new w-25" center>
+            <img class="w-100" src="./img/11.jpg" alt="">
+            <div>
+                <h5>設計展資訊區</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad omnis accusantium quae, culpa voluptas
+                    alias quo assumenda error distinctio ea quas maxime! Facilis consequatur placeat officiis assumenda
+                    eveniet quos asperiores.</p>
+            </div>
+        </div>
+        <div class="new w-25" center>
+            <img class="w-100" src="./img/12.jpg" alt="">
+            <div>
+                <h5>作品介紹區</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum, iure dolorem cum ut nihil
+                    aperiam aspernatur quaerat ipsa
+                    <span class="read" style="display: none;">voluptatum reiciendis perferendis sit impedit recusandae
+                        similique quam harum, suscipit sapiente!</span>
+                </p>
+                <button class="read-btn" onclick="read()">Read more</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./img/facebook.png" alt="">
+        <img src="./img/google.png" alt="">
+        Copyright © 2024 FIBEX All Rights Reserved
+    </footer>
+    <script>
+        function read() {
+            $(".read").slideToggle(500)
+            $(".read-btn").text($(".read-btn").text() === "Read more" ? "Read less" : "Read more")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/tickets.js"></script>
+    <style>
+        label{
+            color: rgb(85, 85, 85);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <img src="./img/logo.png" alt="LOGO">
+        <a href="business.html">Business</a>
+        <a href="tickets.html">Tickets</a>
+    </header>
+    <main>
+        <form method="post" onsubmit="Tickets(event)">
+            <label for="">First name(名字)</label>
+            <input type="text" name="firstname" placeholder="First name(名字)" required>
+            <label for="">Last name(姓氏)</label>
+            <input type="text" name="lastname" placeholder="Last name(姓氏)" required>
+            <label for="">Phone(手機號碼)</label>
+            <input type="text" name="phone" placeholder="Phone(手機號碼)" required>
+            <label for="">Password(會員密碼)</label>
+            <input type="password" name="password" placeholder="Password(會員密碼)" required>
+            <h4>由小到大排列</h4>
+            <label for="ans">Verification(數字驗證)</label>
+            <div class="drag-box"></div>
+            <div id="ans">Verification(數字驗證)</div>
+            <div>
+                <button type="button" onclick="res()">Reset(重設)</button>
+                <button type="submit">Submit(送出按鈕)</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="./img/facebook.png" alt="">
+        <img src="./img/google.png" alt="">
+        Copyright © 2024 FIBEX All Rights Reserved
+    </footer>
+</body>
+
+</html>
